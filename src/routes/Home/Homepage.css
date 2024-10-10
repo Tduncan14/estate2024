@@ -1,0 +1,11 @@
+.homePage {
+  display: flex;
+  height: 100%;
+}
+.homePage .textContainer {
+  flex: 3;
+}
+.homePage .imgContainer {
+  flex: 2;
+  background-color: #fcf5f3;
+}/*# sourceMappingURL=Homepage.css.map */
