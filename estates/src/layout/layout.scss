@@ -1,4 +1,4 @@
-@import './responsive.scss';
+@import '../responsive.scss';
 
 .layout {
     color: black;
@@ -29,6 +29,7 @@
     @include sm {
         // background: red;
         max-width: 640px;
+        // background: pink;
 
     }
 
