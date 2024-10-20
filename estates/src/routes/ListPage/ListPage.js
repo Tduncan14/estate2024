@@ -1,7 +1,7 @@
 import { listData } from '../../lib/dummydata'
-import './listPage.scss'
-
-
+import './listPage.scss';
+import Filter from '../../components/filter/Filter.js'
+import Card from '../../components/Card/Card.js'
 import React from 'react'
 
 const ListPage = () => {
@@ -10,7 +10,27 @@ const ListPage = () => {
     const data = listData;
 
     return (
-        <div>
+        <div className='listPage'>
+            <div className="listContainer">
+                <div className="wrapper">
+                    <Filter />
+                    {
+                        data.map(item => (
+                            <Card key={item.id} item={item} />
+                        ))
+                    }
+
+                </div>
+
+
+            </div>
+
+
+            <div className="mapContainer">
+                Map
+
+            </div>
+
 
         </div>
     )
