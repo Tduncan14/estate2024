@@ -10,6 +10,8 @@ import {
   Route,
   Outlet
 } from 'react-router-dom';
+import Login from './routes/Login/Login';
+import SinglePage from './routes/SinglePage/SinglePage';
 
 // Layout component that includes the Navbar and renders child routes
 
@@ -27,6 +29,11 @@ function App() {
           path: '/list',
           element: <ListPage />, // ListPage route
         },
+
+        {
+          path: '/:id',
+          element: <SinglePage />,
+        }
       ],
     },
   ]);
