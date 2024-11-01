@@ -1,7 +1,7 @@
-import './SinglePage.scss';
-import Slider from '../../components/slider/Slider';
-import { singlePostData, userData } from '../../lib/dummydata';
-import Pin from '../../images/pin.png';
+import './singlePage.scss';
+import Slider from '../slider/Slider';
+import { singlePostData } from '../../lib/dummydata';
+import Menu from '../../images/pin.png';
 
 
 
@@ -19,7 +19,7 @@ const SinglePage = () => {
                             <div className="post">
                                 <h1>{singlePostData.title}</h1>
                                 <div className="address">
-                                    <img src={Pin} alt="" />
+                                    <img src={pin} alt="" />
                                     <span>{singlePostData.address}</span>
                                 </div>
 
@@ -27,14 +27,9 @@ const SinglePage = () => {
                                     {singlePostData.price}
                                 </div>
                             </div>
-                            <div className="user">
-                                <img src={userData.img} alt="" />
-                                <span>{userData.name}</span>
-                            </div>
+                            <div className="user"></div>
                         </div>
-                        <div className="bottom">
-                            {singlePostData.description}
-                        </div>
+                        <div className="bottom">bottom</div>
                     </div>
                 </div>
             </div>
