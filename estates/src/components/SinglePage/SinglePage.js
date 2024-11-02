@@ -1,7 +1,9 @@
 import './singlePage.scss';
 import Slider from '../slider/Slider';
 import { singlePostData } from '../../lib/dummydata';
-import Menu from '../../images/pin.png';
+import chat from '../../images/chat.png';
+import chat from '../../images/save.png';
+import Map from '../Map/Map';
 
 
 
@@ -35,6 +37,30 @@ const SinglePage = () => {
             </div>
             <div className="features">
                 <div className="wrapper">
+                    <p className="title">General</p>
+                    <div className="listVertical"></div>
+                    <p className="title">Sizes</p>
+                    <div className="sizes"></div>
+                    <p className="title">Nearby Places</p>
+                    <div className="listHorizontal"></div>
+                    <p className="title">Location</p>
+                    <div className="mapContainer">
+                        <Map items={[singlePostData]} />
+                    </div>
+
+                    <div className="buttons">
+                        <button>
+                            <img src={chat} alt="" />
+                            Send a message
+                        </button>
+
+
+                        <button>
+                            <img src={save} alt="" />
+                            Save the place
+                        </button>
+                    </div>
+
 
                 </div>
             </div>
