@@ -2,7 +2,9 @@ import './singlePage.scss';
 import Slider from '../slider/Slider';
 import { singlePostData } from '../../lib/dummydata';
 import chat from '../../images/chat.png';
-import chat from '../../images/save.png';
+import save from '../../images/save.png';
+import utility from '../../images/utility.png';
+import pet from '../../images/pet.png';
 import Map from '../Map/Map';
 
 
@@ -38,7 +40,33 @@ const SinglePage = () => {
             <div className="features">
                 <div className="wrapper">
                     <p className="title">General</p>
-                    <div className="listVertical"></div>
+                    <div className="listVertical">
+                        <div className="feature">
+                            <img src={utility} />
+                            <div className="featureText">
+                                <span>Utilities </span>
+                                <p>Renter is responsible</p>
+                            </div>
+                        </div>
+                        {/* pet policey */}
+                        <div className="feature">
+                            <img src={pet} />
+                            <div className="featureText">
+                                <span>Pet Policy </span>
+                                <p>Pets Allowed</p>
+                            </div>
+                        </div>
+                        {/* fee */}
+                        <div className="feature">
+                            <img src={pet} />
+                            <div className="featureText">
+                                <span>Property Fees </span>
+                                <p>Must have 3x the rent in total household income</p>
+                            </div>
+                        </div>
+
+
+                    </div>
                     <p className="title">Sizes</p>
                     <div className="sizes"></div>
                     <p className="title">Nearby Places</p>
