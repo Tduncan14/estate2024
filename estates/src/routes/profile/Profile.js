@@ -2,6 +2,7 @@ import React from 'react'
 import './Profile.scss'
 import { userData } from '../../lib/dummydata'
 import List from '../../components/List/List'
+import Chat from '../../components/Chat/Chat'
 
 const Profile = () => {
     return (
@@ -47,6 +48,8 @@ const Profile = () => {
 
             <div className="chatContainer">
                 <div className="wrapper">
+
+                    <Chat />
 
                 </div>
 
