@@ -1,13 +1,27 @@
+@import '../../responsive.scss';
+
+
 .profilePage {
     display: flex;
     height: 100%;
 
 
 
+    @include md {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+
     .details {
         flex: 3;
         overflow-y: scroll;
         scrollbar-width: thin;
+
+        @include md {
+            flex: none;
+            height: max-content;
+        }
 
 
         .wrapper {
@@ -65,6 +79,11 @@
         flex: 2;
         background-color: #fcf5f3;
         height: 100%;
+
+        @include md {
+            flex: none;
+            height: max-content;
+        }
     }
 
 
