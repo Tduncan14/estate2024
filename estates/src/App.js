@@ -4,6 +4,7 @@ import './layout/layout'
 import Homepage from './routes/Home/Homepage';
 import ListPage from './routes/ListPage/ListPage';
 import Layout from './layout/layout';
+import Profile from './routes/profile/Profile';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,6 +34,10 @@ function App() {
         {
           path: '/:id',
           element: <SinglePage />,
+        },
+        {
+          path: '/profile',
+          element: <Profile />,
         }
       ],
     },

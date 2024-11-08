@@ -108,8 +108,13 @@ function SinglePage() {
                         </div>
                     </div>
                     <p className="title">Location</p>
+
                     <div className="mapContainer">
+
+
+
                         <Map items={[singlePostData]} />
+
                     </div>
                     <div className="buttons">
                         <button>

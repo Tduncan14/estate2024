@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import './navbar.scss'
 import logo from '../../images/logo.png'
+import { Link } from 'react-router-dom';
 import Menu from '../../images/menu.png';
-
+import { userData } from '../../lib/dummydata';
 
 const Navbar = () => {
 
 
     const [open, setOpen] = useState(false)
+    const user = true;
 
 
 
@@ -25,11 +27,20 @@ const Navbar = () => {
                 <a href="/">Agents</a>
             </div>
             <div class="right">
-                <a href="/">Sign In</a>
-                <a class="register" href="/"> Sign Up </a>
-                <div className="menuIcon">
-                    <img src={Menu} alt="" onClick={() => setOpen((prev) => !prev)} />
-                </div>
+                {user ? (<div className="user">
+                    <img src={userData.img} alt="userProfile" />
+                    <span>{userData.name}</span>
+                    <Link className="profile" to="/profile">
+                        <div className="notification">3</div>
+                        <span>Profile</span>
+                    </Link>
+                </div>) : (<><a href="/">Sign In</a>
+                    <a class="register" href="/"> Sign Up </a>
+                    <div className="menuIcon">
+                        <img src={Menu} alt="" onClick={() => setOpen((prev) => !prev)} />
+                    </div> </>)
+
+                }
 
 
 

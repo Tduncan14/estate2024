@@ -1,4 +1,4 @@
-import { listData } from '../../lib/dummydata'
+import { listData, singlePostData } from '../../lib/dummydata'
 import './listPage.scss';
 import Filter from '../../components/filter/Filter.js'
 import Card from '../../components/Card/Card.js'
@@ -29,6 +29,9 @@ const ListPage = () => {
 
             <div className="mapContainer">
                 <Map items={data} />
+
+
+                <Map items={[singlePostData]} />
 
             </div>
 
