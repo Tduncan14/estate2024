@@ -21,10 +21,10 @@ const Navbar = () => {
                     <span>State</span>
                 </a>
 
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-                <a href="/">Agents</a>
+                <Link to="/profile">Home</Link>
+                <Link to="/1">About</Link>
+                <Link to="/">Contact</Link>
+                <Link to="/">Agents</Link>
             </div>
             <div class="right">
                 {user ? (<div className="user">
